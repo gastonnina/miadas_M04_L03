@@ -1,0 +1,32 @@
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Datos y salidas
+emails/
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.parquet
+*.pickle
+*.pkl
+*.h5
+*.log
+*.pdf
+__pycache__/
+*.png
+
+# Entornos virtuales
+venv/
+.env/
+*.env
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.bak
+
