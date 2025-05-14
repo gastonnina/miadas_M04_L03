@@ -79,3 +79,4 @@ Thumbs.db
 .mtc
 build/
 !doc/main.pdf
+!doc/*.png
