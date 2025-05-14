@@ -30,12 +30,13 @@
 
 \maketitle
 
+\renewcommand{\abstractname}{Resumen}
 \begin{abstract}
-Este documento describe un análisis de agrupamiento temático de correos electrónicos. Se hizo uso de varias técnicas de procesamiento de lenguaje natural, incluyendo limpieza de texto, tokenización, eliminación de stopwords y stemming. Los textos fueron vectorizados utilizando el método de TF-IDF y luego agrupados con el algoritmo K-Means. El número óptimo de clústeres se evaluó utilizando el método del codo y el índice de Silhouette, determinando que siete grupos proporcionaban un razonable equilibri...
+En este documento3 se realizó un análisis de clúster temático de correos electrónicos. Se llevaron a cabo diversas técnicas de procesamiento de lenguaje natural, y se realizó la limpieza de texto, tokenización, eliminación de stopwords y stemming. Los textos se vectorizaron utilizando TF-IDF y a continuación se agruparon con el algoritmo K-Means. Se evaluó el número preferible de clústeres empleando el método del codo y el índice de Silhouette, y se determinó que siete clústeres ofrecían un equilibrio adecuado entre simplicidad y calidad de separación. Además, se llevó a cabo el análisis de PCA y metadatos, que confirmó que los clústeres generados eran coherentes en términos de temas: hardware, software, religión, deportes, ciencia, educación y sociedad. Fue una fuerte evidencia de la eficacia empírica del enfoque no supervisado aplicado, que segmentó con precisión y significatividad un diverso y complejo corpus de contenido de texto.
 \end{abstract}
 
 \section{Introducción}
-El análisis automático de grandes volúmenes de texto se ha convertido en una herramienta clave para extraer conocimiento en contextos donde no existe una estructura previa definida. En este trabajo se aborda el problema de descubrir temáticas latentes en un conjunto de correos electrónicos provenientes de foros públicos, los cuales abarcan una amplia gama de temas como tecnología, deportes, sociedad y religión. Dado que estos documentos no están etiquetados, se recurrió a técnicas de procesamiento de l...
+El análisis automático de grandes volúmenes de texto se ha convertido en una herramienta crucial para adquirir conocimiento en circunstancias donde no existe una estructura predefinida.  Este análisis aborda el reto de detectar temas latentes en un conjunto de correos electrónicos provenientes de foros públicos, que abarcan una diversidad de asuntos como la tecnología, los deportes, la sociedad y la religión.   Como estos documentos carecen de etiquetado, se emplearon métodos de procesamiento de lenguaje natural (NLP) y aprendizaje no supervisado para detectar grupos de contenido parecidos.  El propósito principal es determinar si se puede estructurar este conjunto de emails de manera relevante, facilitando de esta manera una mejor comprensión de los asuntos tratados por los usuarios en estos foros de conversación.
 
 \section{Objetivo}
 El objetivo de este trabajo es aplicar técnicas de procesamiento de texto y algoritmos de agrupamiento no supervisado para identificar y analizar temáticas recurrentes en un conjunto de correos electrónicos. Se busca evaluar la capacidad del modelo para segmentar el conjunto de documentos de forma coherente, sin necesidad de etiquetas previas.
@@ -268,6 +269,7 @@ El código fuente del proyecto, así como los notebooks utilizados para el anál
 \noindent\texttt{\url{https://github.com/gastonnina/miadas_M04_L03}}
 
 
+\renewcommand{\refname}{Referencias}
 \bibliographystyle{IEEEtran}
 \begin{thebibliography}{9}
 
